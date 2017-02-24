@@ -1,7 +1,42 @@
 ##Get it
 
+**Gradle**
 
-##How to use it
+```java
+// Add it in your root build.gradle at the end of repositories:
+
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+
+// Add the dependency
+dependencies {
+	        compile 'com.github.CytQ:Rxbus:1.0'
+	}
+
+```
+
+**Maven**
+
+```
+<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
+<dependency>
+	    <groupId>com.github.CytQ</groupId>
+	    <artifactId>Rxbus</artifactId>
+	    <version>1.0</version>
+	</dependency>
+```
+
+##How to use
 
 **Send message to bus**
 
