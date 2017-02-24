@@ -1,3 +1,12 @@
+##Introduction##
+This lib is not good enough and I will update it soon or later to make it suit for more situations. It's suit for the MVC/MVP/MVVM architechture now. 
+
+It's diffirent from the EventBus.
+
+EventBus will send the notification to the specefic subscription which subscribe the event when the event happened.
+
+Rxbus will send all event notifications to the class which subscribe the Rxbus when there are events in Rxbus.
+
 ##Get it
 
 **Gradle**
@@ -96,3 +105,9 @@ Developer must unsubsribe the rxbus subscription when you finish the activity or
 ```java
 rxbus.unsubscribe();
 ```
+
+
+
+
+
+
